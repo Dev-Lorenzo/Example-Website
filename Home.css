@@ -1,0 +1,860 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+/* body style */
+
+body {
+background-color: #151b29;
+font-family: 'Roboto', sans-serif;
+}
+
+/* button style  */
+
+button {
+color: rgba(255, 162, 96, 0.9);
+background: none;
+padding: 1em 2em;
+border: 2.5px solid;
+font-size: 1em;
+transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+margin-left: 33.3333334%;
+}
+
+button:hover {
+border-color: #f1ff5c;
+border-radius: 10px;
+color: wheat;
+box-shadow: 0 0.5em 0.5em -0.4em rgba(241, 255, 92, 0.95);
+transform: translateY(-0.5em) rotate(360deg);
+cursor: pointer;
+transition: border-radius 3s;
+}
+
+/* customize home button */
+
+.buttonhome {
+color: rgba(255, 162, 96, 1);
+background: none;
+padding: 1em 2em;
+border: 2.5px solid;
+font-size: 1em;
+transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+/* Company name style and overlay */
+
+.companyName {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 2px;
+color: wheat;
+display: inline-block;
+white-space: nowrap;
+padding: 1em 2em;
+border: 2.5px dotted;
+font-size: 1em;
+margin-bottom: -20px;
+}
+
+
+.container2 {
+  position: relative;
+  width: 120px;
+  height: 100px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.overlay2{ 
+  position: absolute;
+  bottom: 100%;
+  left: 225%;
+  right: 25;
+  background: none;
+  overflow: hidden;
+  width: 250%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay2 {
+  bottom: 0;
+  height: 100%;
+  border: 2px dotted #f1ff5c;
+}
+
+.text2 {
+  white-space: nowrap;  
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Logo style and overlay  */
+
+.logo {
+color: wheat;
+display: inline-block;
+white-space: nowrap;
+border: 2.5px dotted;
+width: 80%;
+height: 60%;
+margin-left: 250px;
+margin-bottom: -20px;
+
+}
+
+.container {
+  position: relative;
+  width: 80px;
+  height: 100px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.overlay { 
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  right: 20px;
+  background: none;
+  overflow: hidden;
+  width: 250%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  border: 2px dotted #f1ff5c;
+}
+
+.text {
+  white-space: nowrap; 
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* customize line */
+
+.line {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border-top: medium double whitesmoke;
+    border-bottom: none;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 1552px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+
+#line::after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: none;
+    color: white;
+}
+
+#line2 {
+
+margin-top: -60px;
+margin-left: -10px;
+width: 1582px;
+border-color: #151b29;
+position: fixed;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+#line3 {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border-top: medium double whitesmoke;
+    border-bottom: none;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 1552px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+
+#line3::after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: none;
+    color: white;
+}
+
+
+
+.lineLeft::after {
+    content: ".";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: none;
+    color: white;
+}
+
+.lineLeft {
+
+    overflow: visible; /* For IE */
+    padding: 0;
+    border-top: medium double whitesmoke;
+    visibility: hidden;
+    border-bottom: none;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 1552px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: -50px;
+
+}
+/* Customizing social media part */
+
+
+#followUs {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 2px;
+color: #151b29;
+display: inline-block;
+white-space: nowrap;
+font-size: 1em;
+margin-top: -30px;
+}
+
+#social {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+  color: #dfe5f3;
+  text-decoration: none;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 2s linear, background-position 2s linear;
+
+}
+
+#social:hover {
+
+cursor: pointer;
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+
+.social1 {
+
+margin-left: -30%;
+
+}
+
+/* customize title */
+
+#title {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 2px;
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+font-size: 2em;
+margin-top: -30px;
+margin-left: 230px;
+}
+
+#title:hover {
+
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 2s linear, background-position 2s linear;
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+
+}
+
+#title2 {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 2px;
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+font-size: 2em;
+margin-top: -30px;
+margin-left: 650px;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-repeat: no-repeat;
+}
+
+/* customize images */
+
+
+.image {
+
+width: 250px;
+height: 450px;
+background-image: url("");
+background-size: cover;
+}
+
+#background {
+
+display: inline-block;
+white-space: nowrap;
+background-image: url("https://images.pexels.com/photos/3222386/pexels-photo-3222386.jpeg?cs=srgb&dl=pexels-ethan-jones-3222386.jpg&fm=jpg");
+margin-left: 20px;
+}
+
+#background2 {
+
+display: inline-block;
+white-space: nowrap;
+background-image: url("https://images.pexels.com/photos/1850137/pexels-photo-1850137.jpeg?cs=srgb&dl=pexels-bruno-thethe-1850137.jpg&fm=jpg");
+margin-left: 200px;
+}
+
+
+#background3 {
+
+    display: inline-block;
+white-space: nowrap;
+background-image: url("https://images.pexels.com/photos/325688/pexels-photo-325688.jpeg?cs=srgb&dl=pexels-rene-asmussen-325688.jpg&fm=jpg");
+margin-left: 20px;
+margin-top: -60px;
+}
+
+#background4 {
+
+    display: inline-block;
+white-space: nowrap;
+background-image: url("https://images.pexels.com/photos/3692880/pexels-photo-3692880.jpeg?cs=srgb&dl=pexels-cottonbro-3692880.jpg&fm=jpg");
+margin-left: 20px;
+margin-top: 10px;
+}
+
+#background5 {
+
+    display: inline-block;
+white-space: nowrap;
+background-image: url("https://images.pexels.com/photos/2299658/pexels-photo-2299658.jpeg?cs=srgb&dl=pexels-wendy-wei-2299658.jpg&fm=jpg");
+margin-left: 20px;
+}
+
+#background6 {
+
+display: inline-block;
+white-space: nowrap;
+background-image: url("https://images.pexels.com/photos/5118500/pexels-photo-5118500.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5118500.jpg&fm=jpg");
+margin-left: 20px;
+}
+
+
+.image:hover {
+
+filter: grayscale(100%);
+filter: sepia(50%);
+}
+
+/* customize text next to images */
+
+.valori {
+
+  letter-spacing: 2px;
+font-family: 'Lobster', cursive;;
+color: red;
+font-size: 25px;
+display: inline-block;
+white-space: nowrap;
+margin-top: -50px !important;
+margin-left: 10px;
+margin-bottom: -20px;
+transform: translateY(-400px);
+}
+
+#serieta {
+
+color: #f1ff5c;
+
+}
+
+#sicurezza {
+
+color: #f1ff5c;
+
+}
+
+#forza {
+
+color: red;
+margin-left: 10px;
+
+}
+
+#esperienza {
+
+  color: red;
+margin-left: 20px;
+
+}
+
+#qualita {
+
+  color: red;
+margin-left: 20px;
+
+}
+
+#diversita {
+
+  color: blue;
+margin-left: 20px;
+
+}
+
+#etica {
+
+  color: blue;
+margin-left: 20px;
+
+}
+
+.testoValori {
+
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+margin-left: -75px;
+transform: translateY(-50px);
+}
+
+#testoserietà {
+
+margin-left: -90px;
+
+}
+
+#testosicurezza {
+
+margin-left: -105px;
+
+}
+
+#testoesperienza {
+
+margin-left: -120px;
+transform: translateY(-40px);
+}
+
+#testoforza {
+
+margin-left: -70px;
+
+}
+
+#testoqualità {
+
+  margin-left: -100px;
+  transform: translateY(-40px);
+
+}
+
+#testodiversità {
+
+margin-left: -105px;
+
+}
+
+#testoetica {
+
+margin-left: -65px;
+
+}
+
+/* customize distance between elements */
+
+button + button {
+    margin-left: 10px;
+}
+
+.name + button {
+
+margin-left: 300px;
+
+}
+
+button + .logo {
+
+margin-left: 250px;
+
+}
+
+p {
+
+margin-left: 20px;
+
+}
+
+#followUs + p {
+
+margin-top: -10px;
+
+}
+
+#social + #social {
+
+
+margin-left: 2px;
+
+}
+
+.lineLeft + .lineLeft {
+
+
+margin-top: -30px !important;
+
+}
+
+/* customize about us part */
+
+#title3 {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 2px;
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+font-size: 2em;
+margin-top: 20px;
+margin-left: 50px;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 2s linear, background-position 2s linear;
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+
+}
+
+#descrizione {
+
+font-family: 'Sansita Swashed', cursive;
+letter-spacing: 2px;
+color: whitesmoke;
+
+}
+
+.aboutusbutton {
+
+display: inline-block;
+white-space: nowrap;
+ margin-left: 20px;
+ margin-top: 5px;
+color: rgba(255, 162, 96, 1);
+border: 2.5px solid;
+background: none;
+padding: 1em 5em;
+font-size: 1em;
+transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.aboutusbutton:hover {
+border-color: #f1ff5c;
+border-radius: 10px;
+color: wheat;
+box-shadow: 0 0.5em 0.5em -0.4em rgba(241, 255, 92, 0.95);
+transform: translateX(700px);
+cursor: pointer;
+transition: all 10s;
+}
+
+#logo2 {
+display: inline-block;
+white-space: nowrap;
+width: 24%;
+height: 25%;
+margin-left: 1100px;
+margin-top: -490px;
+}
+
+/* customize subscribe form */
+
+#joinus {
+display: inline-block;
+white-space: nowrap;
+width: 24%;
+height: 25%;
+margin-left: 1100px;
+margin-top: -880px;
+}
+
+.input {
+
+margin-left: 20px;
+
+}
+
+.input {
+  font-size:25px;
+  display:block;
+  width:50%;
+  height:50%;
+  padding:5px 10px;
+  background: whitesmoke;
+  background-image: none;
+  border: 1px solid #f1ff5c;
+  color: #151b29;
+  font-style: oblique;
+  border-radius:0;
+}
+
+.input:focus {
+
+  border-radius: 50px;
+  border: 2px solid #f1ff5c;
+  padding: 12px 20px;
+  transition: border-color .25s, box-shadow 5s ease, border-radius 5s;
+  color: whitesmoke;
+  background-color: #151b29;
+
+}
+
+/* customize blog part */
+
+#title4 {
+
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 1.8px;
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+font-size: 1.5em;
+margin-top: 0px;
+margin-left: 80px;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-repeat: no-repeat;
+}
+
+/* customize video part */
+
+.container3 {
+  position: relative;
+  width: 50%;
+  margin-left: 23.3333%;
+  margin-top: -130px;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 120%;
+  height: 120%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: flex;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container3:hover .image2 {
+  opacity: 0.1;
+}
+
+.container3:hover .middle {
+  opacity: 1;
+}
+
+.text3 {
+  background-color: #f1ff5c;
+  border-radius: 30px;
+  color:  #222b40;
+  font-size: 16px;
+  padding: 16px 32px;
+  justify-content: center;
+  font-style: italic;
+}
+
+#separator2  {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border-top: medium double whitesmoke;
+    border-bottom: none;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 1552px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 25px;
+    transform: rotate(180deg);
+    margin-top: -150px !important;
+}
+
+#separator2::after {
+    content: "-";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: none;
+    color: white;
+    transform: rotate(180deg);
+}
+
+/* customize footer */
+
+/* first part */
+
+#separator3 {
+
+margin-top: 375px;
+
+}
+
+#title5 {
+font-size: 40px;
+font-size: 35px;
+margin-top: 10px;
+margin-left: 17px;
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 1.8px;
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+}
+
+#language {
+font-size: 20px;
+margin-top: 10px;
+margin-left: 22px;
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 1.8px;
+color: gray;
+font-style: italic;
+text-decoration: none;
+display: inline-block;
+white-space: nowrap;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-repeat: no-repeat;
+}
+
+#EN {
+
+background-color: rgba(245, 245, 245, 1);
+font-style: italic;
+
+}
+
+#chooselanguage {
+
+  margin-top: 10px;
+margin-left: 20px;
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+font-size: 20px;
+padding: 5px 10px;
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+#title6 {
+  margin-top: 10px;
+font-size: 25px;
+margin-left: 600px;
+font-family: Haettenschweiler,"Franklin Gothic Bold",Charcoal,"Helvetica Inserat","Bitstream Vera Sans Bold","Arial Black","sans serif";
+letter-spacing: 1.8px;
+color: whitesmoke;
+display: inline-block;
+white-space: nowrap;
+  background-image: linear-gradient(#222b40, #222b40), linear-gradient(
+      rgb(176, 251, 188),
+      rgb(176, 251, 188)
+    ), linear-gradient(#feb2b2, #feb2b2);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  font-size: 35px;
+}
+
+.vl {
+  border-left: 3px solid whitesmoke;
+  height: 370px;
+  position: absolute;
+  margin-left: 49.7%;
+  margin-top: -350px;
+}
+
+
+.vl2 {
+  border-left: 2px solid whitesmoke;
+  height: 370px;
+  position: absolute;
+  margin-left: 24.85%;
+  margin-top: -350px;
+}
+
+/* second part */
